@@ -6,6 +6,8 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.2'
 gem 'bcrypt'
 gem 'faker'
+gem 'carrierwave', '1.2.2'
+gem 'mini_magick', '4.7.0'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
@@ -41,6 +43,7 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+  gem 'fog-aws'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
